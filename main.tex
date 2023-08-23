@@ -1,0 +1,109 @@
+% This thesis template has been put together and edited by Jack Furby
+% It's a collection/edit of files produced by Frank C Langbein for his PhD thesis
+% and then edited by Diego Pizzocaro, Ahmed Alazzawi, Hmood Al Dossari, Manar I. Hosny, H.Z. Al-Dossari 
+% and kindly shared by them.
+%
+% Following, the original GNU license chosen by Frank C Langbein, 
+% which is the same license for distributing this package.
+%
+% beautification.tex -- Beautification of Reverse Engineered Geometric Models
+%% PhD Thesis by Frank C. Langbein%
+% Maintainer: Frank C. Langbein <frank@langbein.org>
+% Version: 1.0
+% Copyright (c) 2003 Frank C Langbein.
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.2 or
+% any later version published by the Free Software Foundation; with no
+% Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+% copy of the license is included in the section entitled "GNU Free
+% Documentation License".
+%
+
+
+
+\documentclass[a4paper,oneside,onecolumn,openright,12pt]{book} % DO NOT CHANGE THIS
+\usepackage{cardiff_unofficial_thesis_template}  % DO NOT CHANGE THIS
+
+% Packages for template
+\usepackage{graphicx} % Graphics
+\usepackage{acronym} % Acronyms
+\usepackage[square,numbers]{natbib} % References
+\bibliographystyle{abbrvnat}
+
+% useful packages
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor} % Colour text
+\usepackage[hyphens]{url} % Write urls
+% Fonts, encoding, etc.
+\usepackage[british]{babel} % Culturally-determined typographical
+\usepackage[T1]{fontenc} % Font encodings
+\usepackage{hyperref} % In document hyperlinks
+% Footer and header
+\usepackage{fancyhdr}
+% Math symbols, fonts, etc.
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Extra packages - Add yours here
+
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{3ex}
+\textbf{\Huge Title}\\
+\vfill
+\textbf{\LARGE Your Name}\\[2ex]
+\textbf{\large Cardiff University}\\
+\textbf{\large School of Computer Science \& Informatics}\\
+\vfill
+\includegraphics[width=0.35\textwidth]{media/cardiff_uni_logo.png}
+\vfill
+\textbf{\large A thesis submitted for the degree of Doctor of Philosophy}\\[1ex]
+\textbf{\large September 2024}\\
+\end{center}
+
+\end{titlepage}
+
+\input{preliminary_pages/declaration}
+
+\cleardoublepage
+
+\input{preliminary_pages/dedication}
+
+\cleardoublepage
+
+\input{preliminary_pages/abstract}
+
+\def\baselinestretch{1.5}\normalfont
+
+\tableofcontents
+
+\input{preliminary_pages/listofpublications}
+\listoffigures
+\listoftables
+\listofalgorithms
+\input{preliminary_pages/acronyms}
+
+\input{preliminary_pages/acknowledgements}
+
+
+\mainmatter
+%begin each chapter chapter1.tex by \Chapter{chapter1}, for example, then the sections and so on...
+\input{chapters/chapter1}
+
+
+\backmatter
+
+\def\baselinestretch{1}\normalfont
+\def\baselinestretch{1.24}\normalfont
+
+\bibliography{bibliography}
+
+
+\end{document}
