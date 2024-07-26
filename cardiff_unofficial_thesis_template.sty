@@ -40,22 +40,22 @@
 \RequirePackage{vmargin}
 \setpapersize{A4}
 \setmarginsrb{40mm}{20mm}{25mm}{30mm}{14.5pt}{8mm}{0pt}{11mm}
-
 % Footer and header
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[R]{\thepage}
 \fancyhead[R]{\slshape \leftmark}
 \fancyfoot{}
+\fancyfoot[C]{\thepage}
 \renewcommand{\chaptermark}[1]{}
 \renewcommand{\sectionmark}[1]%
              {\markboth{\thesection\ #1}{\thesection\ #1}}
 \renewcommand{\subsectionmark}[1]{}
 \fancypagestyle{plain}{%
   \fancyhead{}
-  \fancyhead[R]{\thepage}
+  \fancyhead[R]{}
   \fancyfoot{}
+  \fancyfoot[C]{\thepage}
   \renewcommand{\headrulewidth}{.6pt}
 }
 
