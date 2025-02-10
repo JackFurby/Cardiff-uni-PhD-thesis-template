@@ -45,8 +45,6 @@
 \textbf{\large Cardiff University}\\
 \textbf{\large School of Computer Science \& Informatics}\\
 \vfill
-\includegraphics[width=0.35\textwidth]{media/cardiff_uni_logo.png}
-\vfill
 \textbf{\large A thesis submitted for the degree of Doctor of Philosophy}\\[1ex]
 \textbf{\large September 2024}\\
 \end{center}
@@ -65,17 +63,11 @@
 \listoftables
 \listofalgorithms
 \input{preliminary_pages/acronyms}
-
 \input{preliminary_pages/listofpublications}
-
 \cleardoublepage
-
 \input{preliminary_pages/acknowledgements}
-
 \cleardoublepage
-
 \input{preliminary_pages/dedication}
-
 \cleardoublepage
 
 \mainmatter
@@ -90,5 +82,15 @@
 
 \bibliography{bibliography}
 
+% appendix increments with numbers. These are also appended to the start of figures and tables
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\renewcommand\thefigure{\thesection\arabic{figure}}
+\renewcommand\thetable{\thesection\arabic{table}}
+
+\input{chapters/appendix}
 
 \end{document}
