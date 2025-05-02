@@ -48,9 +48,10 @@
 \fancyhead[R]{\slshape \leftmark}
 \fancyfoot{}
 \fancyfoot[C]{\thepage}
-\renewcommand{\chaptermark}[1]{}
+\renewcommand{\chaptermark}[1]%
+            {\markboth{#1}{#1}}
 \renewcommand{\sectionmark}[1]%
-             {\markboth{\thesection\ #1}{\thesection\ #1}}
+            {\markboth{\thesection\ #1}{\thesection\ #1}}
 \renewcommand{\subsectionmark}[1]{}
 \fancypagestyle{plain}{%
   \fancyhead{}
